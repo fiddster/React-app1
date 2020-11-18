@@ -1,11 +1,14 @@
-import './styles/App.css';
-import { Routes } from './routes/Routes';
+import { Routes } from './routes/Routes'
+import { NavigationBar } from './components/navigationbar/NavigationBar'
+import { UserProvider } from './shared/provider/UserProvider'
 
 function App() {
   return (
-    <Routes>
-      <h1>Hello there</h1>
-    </Routes>
+    <UserProvider>
+      <Routes>
+        <NavigationBar />
+      </Routes>
+    </UserProvider>
   );
 }
 

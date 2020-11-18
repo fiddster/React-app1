@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 export const HomeView = () => {
   return (
     <div>
-      <h1>Home view</h1>
+      <h1>This is the HomeView!</h1>
     </div>
-  );
-};
+  )
+}
