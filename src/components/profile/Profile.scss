@@ -1,0 +1,35 @@
+.profile-dropdown{
+	position: absolute;
+	min-width: 100px;
+	margin: 0;
+	text-align: center;
+	background-color: #f2f2f2;
+	display: none;
+	span{
+		display: block;
+		padding: 1%;
+	}
+}
+
+.dropdown-button{
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.toggler{
+	display: block;
+	border: 1px solid black;
+	text-align: center;
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
