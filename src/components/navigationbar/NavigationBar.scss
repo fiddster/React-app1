@@ -1,5 +1,6 @@
 .navigationbar-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
   background-color: orangered;
   padding: 2%;
 }
@@ -11,4 +12,10 @@
 
 .navigation-link {
   cursor: pointer;
+}
+
+.sign-in{
+	grid-column: 9/11;
+	justify-self: center;
+	align-self: center;
 }

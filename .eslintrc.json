@@ -21,10 +21,10 @@
         "react/prop-types": [
             "off"
         ],
-        "indent": [
-            "off",
-            "tab"
-        ],
+        //"indent": [
+        //    "off",
+        //    "tab"
+        //],
         "linebreak-style": [
             "warn",
             "windows"
