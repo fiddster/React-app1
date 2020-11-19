@@ -2,12 +2,15 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   background-color: orangered;
-  padding: 2%;
+//  padding: 2%;
+  max-height: min-content;
 }
 
 .logotype {
   width: 100px;
   cursor: pointer;
+  justify-self: center;
+	align-self: center;
 }
 
 .navigation-link {

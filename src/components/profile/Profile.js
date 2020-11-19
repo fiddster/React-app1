@@ -9,12 +9,15 @@ export const Profile = () => {
 
 	const history = useHistory()
 	const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
-	const [dropdownExpanded, setDropdownExpanded] = useState(false)
+	const [dropdownExpanded, setDropdownExpanded] = useState(true)
 	const [dropdownClasses, setDropdownClasses] = useState('profile-dropdown hide')
 
-	const dropdownToggle = () => {
+	//useEffect(() => {
+	//	setDropdownExpanded(false)
+	//})
 
-		setDropdownExpanded(dropdownExpanded => !dropdownExpanded)
+	const dropdownToggle = () => {
+		setDropdownExpanded(!dropdownExpanded)
 
 		if (dropdownExpanded) {
 			setDropdownClasses('profile-dropdown show')
@@ -31,8 +34,8 @@ export const Profile = () => {
 
 	return (
 		<div className="sign-in">
+			<span className="username">{authenticatedUser}</span>
 			<img src={'https://thispersondoesnotexist.com/image'} alt={'Error...'} style={{ width: 100 }} />
-			<span>{authenticatedUser}</span>
 			<span className="toggler" onClick={() => dropdownToggle()}>Menu</span>
 			<div className={dropdownClasses}>
 				<span className="dropdown-button" onClick={() => history.push(SETTINGS_PATH)}>Settings</span>

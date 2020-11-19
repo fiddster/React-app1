@@ -10,7 +10,10 @@
 		padding: 1%;
 	}
 }
-
+.username{
+	display: block;
+	text-align: center;
+}
 .dropdown-button{
 	&:hover{
 		cursor: pointer;
